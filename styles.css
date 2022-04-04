@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Variables */
+
+:root {
+  /* Paleta de colores */
+  --very-ligh-pink: #c7c7c7;
+  --white: #fff;
+  --text-input-field: #F7F7F7;
+  --black: #000000;
+  --hospital-green: #ACD9B2;
+  --dark: #232830;
+
+  /* tamaños de texto 18px 16px 14px  */
+  --lg: 18px;
+  --md: 16px;
+  --sm: 14px;
+  --border-circular-radius: 50%:
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.password-recovery {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 300px;
+  align-self: center;
+  margin-bottom: 48px ;
+}
+
+
+.title {
+  font-size: var(--lg);
+  font-weight: bold;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: var(--md);
+  font-weight: normal;
+  color: var(--very-ligh-pink);
+  text-align: center;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form label {
+  font-size: var(--md);
+  font-weight: bold;
+}
+
+.form .email {
+  background-color: var(--text-input-field);
+  color: var(--very-ligh-pink);
+  font-size: var(--md);
+  padding: 4px;
+  border: none;
+  border-radius: 4px;
+}
+
+.form .primary-button {
+  background-color: var(--hospital-green);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  font-size: var(--lg);
+  padding: 8px;
+}
+
+.link {
+  text-align: center;
+  text-decoration: none;
+  color: var(--hospital-green);
+  margin-top: 32px;
+  font-size: var(--sm);
+}
+
+/* Media queries */
+@media screen and (min-width: 640px) {
+  .logo {
+    display: none;
+  }
+}
